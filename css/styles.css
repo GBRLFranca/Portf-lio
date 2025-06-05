@@ -1,0 +1,253 @@
+html {
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1120px;
+    background: linear-gradient(150deg, #000000, #6aa48c);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px 10px 15px;
+}
+
+.cabecalho .logo {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Raleway", sans-serif;
+    transition: 0.2s;
+}
+
+.cabecalho a:hover .logo {
+    color: #48a9a4;
+    border: 2px solid #48a9a4;
+}
+
+.cabecalho .menu li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.cabecalho .menu li a:hover {
+    background-color: #48a9a4;
+    border-radius: 50%;
+}
+
+.home {
+    display: flex;
+    min-height: calc(100vh - 105px);
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.home .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 50%;
+}
+
+.home .informacoes h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home .informacoes p {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home .redes-sociais {
+    gap: 20px;
+}
+
+.home .redes-sociais ul {
+    display: flex;
+}
+
+.home .redes-sociais ul li i{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .redes-sociais a i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    transition: 0.3s;
+    color: #fff;
+    margin: 0 7px;
+}
+
+.home .redes-sociais a i:hover {
+    color: #48a9a4;
+    border: 1px solid #48a9a4;
+    transform: scale(1.1);
+}
+
+.container-foto{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .container-foto .foto {
+    max-width: 390px;
+    border-radius: 50%;
+}
+
+.home .container-foto img {
+    max-width: 390px;
+    border-radius: 50%;
+    background: linear-gradient(344deg, rgba(0,0,0,1) 0%, rgba(106,164,140,1) 55%);
+}
+
+.home .foto.sombra-interna {
+    background: linear-gradient(344deg, rgba(0,0,0,1) 0%, rgba(106,164,140,1) 55%);
+}
+
+.botao {
+    padding-bottom: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao a{
+    width: 5%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.botao a i {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: anima-seta 950ms ease infinite; /*insere uma animação no item*/
+}
+
+
+.projetos {
+    padding-bottom: 70px;
+}
+
+.projetos .titulo {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.projetos .container-projetos {
+    
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.projetos .projeto {
+    max-width: 260px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+
+.projetos .projeto.ativo {
+    display: block;
+}
+
+.projetos .projeto img {
+    height: 100%;
+    width: 100%;
+}
+
+.projetos .projeto h3 {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: #040203;
+    color: #fff;
+}
+
+.projetos .projeto .informacoes-projeto {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.7;
+    background-color: #000;
+}
+
+.btn-mostrar-projetos {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    /*tirei o botao pq ainda nao tenho muito projeto para mostrar*/
+    
+}
+
+.btn-mostrar-projetos:hover {
+    background-color: #48a9a4;
+    transition: 0.3s;
+}
+
+.btn-mostrar-projetos.remover {
+    display: none;
+}
