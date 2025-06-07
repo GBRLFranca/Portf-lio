@@ -8,6 +8,7 @@
         align-items: center;
         margin: 0;
         gap: 30px;
+        padding: 0 0 100px 0;
     }
 
     .home .informacoes {
@@ -15,7 +16,6 @@
         text-align: center;
         align-items: center;
     }
-
 
     .projetos .container-projetos {
         padding: 0 30px;
@@ -30,11 +30,31 @@
     }
 }
 
+@media(max-width: 720px){
+    .home {
+        margin: 0;
+    }
+}
 
 
 @media(max-width: 425px) {
    
+   html, body {
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    }
 
+    .cabecalho {
+        padding-top: 50px;
+    }
+    
+    .home {
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 0;
+        height: 100%;
+        
+    }
+    
     .home .informacoes h1 {
         font-size: 30px;
     }
